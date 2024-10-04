@@ -5,15 +5,15 @@ namespace MvcMovie.Controllers;
 public class HelloWorldController : Controller
 {   
     //localhost/{port}/helloworld
-    public string Index()
+    public IActionResult Index()
     {
-        return "This is the index page";
+        return View();
     }
 
     //localhost/{port}/helloworld/welcome
-    public string Welcome()
+    public IActionResult Welcome()
     {
-        return "Welcome to the welcome page";
+        return View();
     }
 
     public string mark()
